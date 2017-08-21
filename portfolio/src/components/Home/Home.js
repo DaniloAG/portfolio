@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import {
   HomeSection,
-  HomeHeader,
-  HomeSubHeader,
-  SocialMedia,
   GitHub,
   Facebook,
   LinkedIn
@@ -13,9 +10,10 @@ class Home extends Component{
   render(){
     return (
       <HomeSection>
-        <HomeHeader>Danilo Gonzalez</HomeHeader>
-        <HomeSubHeader>Lorem ipsum dolor sit amet.</HomeSubHeader>
-        <SocialMedia>
+        <div className="wrapper"></div>
+        <h1>Danilo Gonzalez</h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <ul>
           <GitHub>
             <a href="https://github.com/DaniloAG" target="_blank">
               <i className="fa fa-github" aria-hidden="true"></i>
@@ -34,7 +32,7 @@ class Home extends Component{
               <p>Facebook</p>
             </a>
           </Facebook>
-        </SocialMedia>
+        </ul>
       </HomeSection>
     );
   }

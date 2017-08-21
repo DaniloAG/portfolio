@@ -1,45 +1,48 @@
 import styled from "styled-components";
+import codingBackground from "../../assets/img/coding-background.jpg";
 
 export const HomeSection = styled.div`
-  height: 100vh;
+  clear: both;
+  background-image: url(${codingBackground});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 92.6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    padding: 0 20px;
-`;
+  padding: 0 20px;
 
-export const HomeHeader = styled.h1`
-  display: block;
-  color: #000;
-  font-size: 30px;
-  letter-spacing: 0.05em;
-  font-weight: 700;
-`;
+  .wrapper{
+    margin-top: -10%;
+  }
 
-export const HomeSubHeader = styled.h2`
-  color: #595959;
-  letter-spacing: 0.1em;
-  font-size: 20px;
-  font-weight: 200;
-`;
+  h1{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
 
-export const SocialMedia = styled.ul`
-  list-style: none;
-  a:link{
+  h2{
+    color: #595959;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  a{
     text-decoration: none;
   }
 
   a:visited{
-    text-decoration: none;
     color: inherit;
   }
 
-  a:active{
-    text-decoration: underline;
-  }
-
   li{
+    display: inline;
     margin: 0 30px;
     font-size: 2.2em;
     position: relative;
@@ -54,21 +57,18 @@ export const SocialMedia = styled.ul`
 `;
 
 export const GitHub = styled.li`
-  display: inline-block;
   a:hover{
     color: #000;
   }
 `;
 
 export const Facebook = styled.li`
-  display: inline-block;
   a:hover{
     color: #3b5998;
   }
 `;
 
 export const LinkedIn = styled.li`
-  display: inline-block;
   a:hover{
     color: #0976b4;
   }
